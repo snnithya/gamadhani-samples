@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>5.2 Coarse Pitch Conditioning - Demo Samples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="icon" href="https://gamadhani.github.io/%20favicon.png%20">  
+    <link rel="stylesheet" href="/css/style.min.75d979721c77aee3e680cd0fadc988bd8e4d9de67f4d5a370ef8f8e1afe76103.css">  
+
+</head>
+
+
+
+<body class='page-home'></body>
+<div class="wrapper">
+    <div class='header'>
+    <div class="container">
+        
+        
+        <div id="main-menu" class="main-menu">
+    <ul>
+         
+        <li class="menu-item-/static/home.png">
+            <a href="/">
+                
+                <figure>
+                    <img src="/static/home.png" alt="Descriptive text about the image">
+                </figure>
+            </a>
+        </li>
+        
+    </ul>
+</div>
+        <h1>GaMaDHaNi: Hierarchical Generative Modeling of Melodic Vocal Contours in Hindustani Classical Music</h1>
+    </div>
+</div>  
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-3">
+                <div class="sidebar">
+                    
+<div class="docs-menu">
+    
+    <ul>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/1figs/">1 Figures 1 &amp; 2</a>
+        </li>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/2data/">4.1 Dataset</a>
+        </li>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/3listening_test/">4.4 Human Evaluation on Melodic Quality</a>
+        </li>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/4pitch_adherence/">4.5 Pitch Adherence</a>
+        </li>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/5primed_generation/">5.1 Primed Generation</a>
+        </li>
+        
+        <li class="active ">
+            <a href="https://gamadhani.github.io/6coarsepitch/">5.2 Coarse Pitch Conditioning</a>
+        </li>
+        
+    </ul>
+</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                 
+<div class="container">
+    <h1 class="title">5.2 Coarse Pitch Conditioning</h1>
+    <div class="content  " style="text-align: justify; ">
+        <h2 id="descending-scale-in-kafi-thaat">Descending Scale in Kafi Thaat</h2>
+<h4 id="conditioning-signal">Conditioning Signal</h4>
+<figure><img   src="/static/coarsePitch/sheet.png" 
+         alt="Depiction of conditioning signal in sheet music."/><figcaption>
+        <p>Depiction of conditioning signal in sheet music.</p>
+    </figcaption>
+    </figure>
+<h4 id="audio-samples">Audio Samples</h4>
+<p>
+<style>
+    .audio-gallery {
+        display: flex;
+         
+        flex-wrap: wrap;
+         
+        justify-content: space-between;
+         
+    }
+    
+    .audio-item {
+        margin: 0 10px;
+         
+        flex: 1;
+         
+    }
+    
+    audio {
+        width: 100%;
+         
+    }
+</style>
+<div class="audio-gallery">
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/coarsePitch/conditioning.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Conditioning Contour</p>
+    </div>
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/coarsePitch/generation.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Conditioned Generation</p>
+    </div>
+    
+</div>
+<figure><img   src="/static/coarsePitch/coarse-cond.png" 
+         alt="Fig 5: A staircase descending scale (in blue) as a coarse input. This input is then processed as described in Section 5.2 and fed into the model. The generated fine-grain contour (in orange) has glides (mindh) and a jerky movement (gamak) characteristic to Hindustani music."/><figcaption>
+        <p>Fig 5: A staircase descending scale (in blue) as a coarse input. This input is then processed as described in Section 5.2 and fed into the model. The generated fine-grain contour (in orange) has glides (mindh) and a jerky movement (gamak) characteristic to Hindustani music.</p>
+    </figcaption>
+    </figure>
+<figure><img   src="/static/coarsePitch/spec-cond.png" 
+         alt="Spectrogram of generated sample in Fig 5"/><figcaption>
+        <p>Spectrogram of generated sample in Fig 5</p>
+    </figcaption>
+    </figure></p>
+<h4 id="example-of-an-expert-musician-singing-the-same-scale">Example of an expert musician singing the same scale</h4>
+<p><div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+    <iframe src="https://www.youtube-nocookie.com/embed/dyBkrUue5VQ?start=863&end=876" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+</div><!-- raw HTML omitted --></p>
+<h1 id="other-examples-of-conditioning-from-the-dataset">Other examples of conditioning from the dataset</h1>
+<p>We present plots of the ground truth pitch contour along with the coarse conditioning signal extracted from it (described in section 5.2), and the generated pitch contour along with the coarse contour extracted from it.</p>
+<p>Note: Ground truth audios are resynthesized with our Spectrogram Generator + vocoder.</p>
+<h2 id="example-1">Example 1</h2>
+<p>Even though the coarse contour of the input and generated contour are pretty similar, the generated samples tend to become extra smooth compared to the input.</p>
+
+<style>
+    .audio-gallery {
+        display: flex;
+         
+        flex-wrap: wrap;
+         
+        justify-content: space-between;
+         
+    }
+    
+    .audio-item {
+        margin: 0 10px;
+         
+        flex: 1;
+         
+    }
+    
+    audio {
+        width: 100%;
+         
+    }
+</style>
+<div class="audio-gallery">
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/coarsePitch/og-1.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Ground truth resynthesized audio (from which coarse pitch conditioning is extracted)</p>
+    </div>
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/coarsePitch/generated-1.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Generated audio</p>
+    </div>
+    
+</div>
+<figure><img   src="/static/coarsePitch/example1.png" 
+         alt="(Top) Ground truth contour and input coarse conditioning. (Bottom) Generated contour and &amp;lsquo;coarse&amp;rsquo; contour extracted from the generated sample."/><figcaption>
+        <p>(Top) Ground truth contour and input coarse conditioning. (Bottom) Generated contour and &lsquo;coarse&rsquo; contour extracted from the generated sample.</p>
+    </figcaption>
+    </figure>
+<h2 id="example-2">Example 2</h2>
+
+<style>
+    .audio-gallery {
+        display: flex;
+         
+        flex-wrap: wrap;
+         
+        justify-content: space-between;
+         
+    }
+    
+    .audio-item {
+        margin: 0 10px;
+         
+        flex: 1;
+         
+    }
+    
+    audio {
+        width: 100%;
+         
+    }
+</style>
+<div class="audio-gallery">
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/coarsePitch/og-2.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Ground truth resynthesized audio (from which coarse pitch conditioning is extracted)</p>
+    </div>
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/coarsePitch/gen-2.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Generated audio</p>
+    </div>
+    
+</div>
+<figure><img   src="/static/coarsePitch/example2.png" 
+         alt="(Top) Ground truth contour and input coarse conditioning. (Bottom) Generated contour and &amp;lsquo;coarse&amp;rsquo; contour extracted from the generated sample."/><figcaption>
+        <p>(Top) Ground truth contour and input coarse conditioning. (Bottom) Generated contour and &lsquo;coarse&rsquo; contour extracted from the generated sample.</p>
+    </figcaption>
+    </figure>
+
+    </div>
+</div>
+</div>
+</a> 
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+    
+<script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+ 
+  
+  
+    
+  
+
+
+
+
+</body>
+
+</html>

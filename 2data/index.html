@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>4.1 Dataset - Demo Samples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="icon" href="https://gamadhani.github.io/%20favicon.png%20">  
+    <link rel="stylesheet" href="/css/style.min.75d979721c77aee3e680cd0fadc988bd8e4d9de67f4d5a370ef8f8e1afe76103.css">  
+
+</head>
+
+
+
+<body class='page-home'></body>
+<div class="wrapper">
+    <div class='header'>
+    <div class="container">
+        
+        
+        <div id="main-menu" class="main-menu">
+    <ul>
+         
+        <li class="menu-item-/static/home.png">
+            <a href="/">
+                
+                <figure>
+                    <img src="/static/home.png" alt="Descriptive text about the image">
+                </figure>
+            </a>
+        </li>
+        
+    </ul>
+</div>
+        <h1>GaMaDHaNi: Hierarchical Generative Modeling of Melodic Vocal Contours in Hindustani Classical Music</h1>
+    </div>
+</div>  
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-3">
+                <div class="sidebar">
+                    
+<div class="docs-menu">
+    
+    <ul>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/1figs/">1 Figures 1 &amp; 2</a>
+        </li>
+        
+        <li class="active ">
+            <a href="https://gamadhani.github.io/2data/">4.1 Dataset</a>
+        </li>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/3listening_test/">4.4 Human Evaluation on Melodic Quality</a>
+        </li>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/4pitch_adherence/">4.5 Pitch Adherence</a>
+        </li>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/5primed_generation/">5.1 Primed Generation</a>
+        </li>
+        
+        <li class="">
+            <a href="https://gamadhani.github.io/6coarsepitch/">5.2 Coarse Pitch Conditioning</a>
+        </li>
+        
+    </ul>
+</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                 
+<div class="container">
+    <h1 class="title">4.1 Dataset</h1>
+    <div class="content  " style="text-align: justify; ">
+        <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="artifacts-in-the-dataset">Artifacts in the dataset</h1>
+<p>Our dataset included vocal audio separated from mixed audio performance of Hindustani vocal music containing voice, melodic accompaniment (sarangi or harmonium) and rhythmic accompaniment (tabla) as described in section 4.1. In this section we note some instances of incorrect data and, as a result, samples of incorrect generation.</p>
+<h2 id="1-leaked-sarangi-stringed-melodic-instrument-sound">1. Leaked Sarangi (stringed melodic instrument) sound</h2>
+<p>The source separation model, <a href="https://github.com/facebookresearch/demucs">Demucs</a> finds it particularly hard to separate the sarangi sound from the voice. This could be due to a combination of our data being out of distribution for demucs and the similarity of the sarangi&rsquo;s timbre to the voice. The source separated audio shown below is the vocal stem which is fed into our model for training.</p>
+<h3 id="examples-of-sarangi-in-the-dataset">Examples of Sarangi in the dataset</h3>
+<h4 id="example-1-only-sarangi-playing-with-tabla">Example 1: Only Sarangi playing with tabla</h4>
+
+<style>
+    .audio-gallery {
+        display: flex;
+         
+        flex-wrap: wrap;
+         
+        justify-content: space-between;
+         
+    }
+    
+    .audio-item {
+        margin: 0 10px;
+         
+        flex: 1;
+         
+    }
+    
+    audio {
+        width: 100%;
+         
+    }
+</style>
+<div class="audio-gallery">
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/dataset/sarangi-og.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Original Audio</p>
+    </div>
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/dataset/sarangi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Source Separated Audio</p>
+    </div>
+    
+</div>
+<h4 id="example-2-sarangi-playing-with-voice-and-tabla">Example 2: Sarangi playing with voice and tabla</h4>
+
+<style>
+    .audio-gallery {
+        display: flex;
+         
+        flex-wrap: wrap;
+         
+        justify-content: space-between;
+         
+    }
+    
+    .audio-item {
+        margin: 0 10px;
+         
+        flex: 1;
+         
+    }
+    
+    audio {
+        width: 100%;
+         
+    }
+</style>
+<div class="audio-gallery">
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/dataset/sarangi_w_voice_og.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Original Audio</p>
+    </div>
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/dataset/sarangi_w_voice.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Source Separated Audio</p>
+    </div>
+    
+</div>
+<h3 id="examples-of-sarangi-in-generated-samples">Examples of Sarangi in generated samples</h3>
+
+<style>
+    .audio-gallery {
+        display: flex;
+         
+        flex-wrap: wrap;
+         
+        justify-content: space-between;
+         
+    }
+    
+    .audio-item {
+        margin: 0 10px;
+         
+        flex: 1;
+         
+    }
+    
+    audio {
+        width: 100%;
+         
+    }
+</style>
+<div class="audio-gallery">
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/dataset/sarangi-gen1-pitchdiff.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Example 1: generated by GaMaDHaNi (diffusion variant); (between 0-4s)</p>
+    </div>
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/dataset/sarangi-gen2diffbaseline.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Example 2: generated by non-hierarchical baseline; (between 1-2s)</p>
+    </div>
+    
+</div>
+<h2 id="2-speech">2. Speech</h2>
+<p>There are some instances of speech in the dataset as well. As a result, some generations seem to have a hybrid of speech and singing sounds.</p>
+<h3 id="example-of-speech-in-the-dataset">Example of speech in the dataset</h3>
+
+<style>
+    .audio-gallery {
+        display: flex;
+         
+        flex-wrap: wrap;
+         
+        justify-content: space-between;
+         
+    }
+    
+    .audio-item {
+        margin: 0 10px;
+         
+        flex: 1;
+         
+    }
+    
+    audio {
+        width: 100%;
+         
+    }
+</style>
+<div class="audio-gallery">
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/dataset/orig-speech.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Original Audio</p>
+    </div>
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/dataset/ss-speech.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Source Separated Audio</p>
+    </div>
+    
+</div>
+<h3 id="example-of-speech-like-sounds-in-generation">Example of speech-like sounds in generation</h3>
+<p>This example seems to be a mix between speech and singing.
+
+<style>
+    .audio-gallery {
+        display: flex;
+         
+        flex-wrap: wrap;
+         
+        justify-content: space-between;
+         
+    }
+    
+    .audio-item {
+        margin: 0 10px;
+         
+        flex: 1;
+         
+    }
+    
+    audio {
+        width: 100%;
+         
+    }
+</style>
+<div class="audio-gallery">
+    
+    <div class="audio-item">
+        <audio controls>
+            <source src="/static/dataset/diffpitch-speech.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Generated sample by GaMaDHaNi (diffusion variant); This feels like an interesting mixture of speech and singing sounds.</p>
+    </div>
+    
+</div></p>
+
+    </div>
+</div>
+</div>
+</a> 
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+    
+<script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+ 
+  
+  
+    
+  
+
+
+
+
+</body>
+
+</html>
