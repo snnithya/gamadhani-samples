@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GaMaDHaNi Samples Page on Demo Samples</title>
-    <link>https://gamadhani.github.io/</link>
+    <link>https://snnithya.github.io/gamadhani-samples/</link>
     <description>Recent content in GaMaDHaNi Samples Page on Demo Samples</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://gamadhani.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://snnithya.github.io/gamadhani-samples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1 Figures 1 &amp; 2</title>
-      <link>https://gamadhani.github.io/1figs/</link>
+      <link>https://snnithya.github.io/gamadhani-samples/1figs/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
       
-      <guid>https://gamadhani.github.io/1figs/</guid>
+      <guid>https://snnithya.github.io/gamadhani-samples/1figs/</guid>
       <description>Figure 1: Example of Hindustani Singing    Fig 1: Extracted pitch contour from audio recording of Hindustani classical singing. Solfege notation is highlighted as a horizontal grid.
  
 Figure 2: Overview of GaMaDHaNi Note: The sound of a tanpura (drone) is added to the background of the generated samples highlighted below. The use of a tanpura is common in Hindustani vocal performance, and is added here to simulate that sound.</description>
@@ -19,50 +19,50 @@ Figure 2: Overview of GaMaDHaNi Note: The sound of a tanpura (drone) is added to
     
     <item>
       <title>4.1 Dataset</title>
-      <link>https://gamadhani.github.io/2data/</link>
+      <link>https://snnithya.github.io/gamadhani-samples/2data/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
       
-      <guid>https://gamadhani.github.io/2data/</guid>
+      <guid>https://snnithya.github.io/gamadhani-samples/2data/</guid>
       <description>Artifacts in the dataset Our dataset included vocal audio separated from mixed audio performance of Hindustani vocal music containing voice, melodic accompaniment (sarangi or harmonium) and rhythmic accompaniment (tabla) as described in section 4.1. In this section we note some instances of incorrect data and, as a result, samples of incorrect generation.
 1. Leaked Sarangi (stringed melodic instrument) sound The source separation model, Demucs finds it particularly hard to separate the sarangi sound from the voice.</description>
     </item>
     
     <item>
       <title>4.4 Human Evaluation on Melodic Quality</title>
-      <link>https://gamadhani.github.io/3listening_test/</link>
+      <link>https://snnithya.github.io/gamadhani-samples/3listening_test/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
       
-      <guid>https://gamadhani.github.io/3listening_test/</guid>
+      <guid>https://snnithya.github.io/gamadhani-samples/3listening_test/</guid>
       <description>Examples of audio samples used in the listening test Presented below are samples from the various systems used in the listening study. Output of all but one of the systems were passed through our Spectrogram Generator to maintain similar quality. The Hierarchical Encodec Baseline generates audio directly and thus didn&amp;rsquo;t need the Spectrogram Generator.
 GaMaDHaNi (autoregressive variant)  .audio-gallery { display: flex; flex-wrap: wrap; justify-content: space-between; } .audio-item { margin: 0 10px; flex: 1; } audio { width: 100%; }  Your browser does not support the audio element.</description>
     </item>
     
     <item>
       <title>4.5 Pitch Adherence</title>
-      <link>https://gamadhani.github.io/4pitch_adherence/</link>
+      <link>https://snnithya.github.io/gamadhani-samples/4pitch_adherence/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
       
-      <guid>https://gamadhani.github.io/4pitch_adherence/</guid>
+      <guid>https://snnithya.github.io/gamadhani-samples/4pitch_adherence/</guid>
       <description>Presented below are the audio clips and pitch contour plots of the four samples present in figure 4. We highlight instances of low and high correlation between ground truth and extracted pitch contours. In the paper we use correlation as a measure for &amp;lsquo;pitch adherence&amp;rsquo; in the Spectrogram Generator and based on the audio samples.
 The lower correlation samples (example 1 and 2) have a lower value due to either pitch detection errors or artifacts in the samples as seen below.</description>
     </item>
     
     <item>
       <title>5.1 Primed Generation</title>
-      <link>https://gamadhani.github.io/5primed_generation/</link>
+      <link>https://snnithya.github.io/gamadhani-samples/5primed_generation/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
       
-      <guid>https://gamadhani.github.io/5primed_generation/</guid>
+      <guid>https://snnithya.github.io/gamadhani-samples/5primed_generation/</guid>
       <description>Note: All audio samples, both ground truth and generated are resynthesized by passing the pitch contours through our Spectrogram Generator + vocoder. Additionally, all samples are generated by GaMaDHaNi (autoregressive variant).
 1. Sample with fast movement in a high voice Our proposed method is able to continue a similar idea.  .audio-gallery { display: flex; flex-wrap: wrap; justify-content: space-between; } .audio-item { margin: 0 10px; flex: 1; } audio { width: 100%; }  Your browser does not support the audio element.</description>
     </item>
     
     <item>
       <title>5.2 Coarse Pitch Conditioning</title>
-      <link>https://gamadhani.github.io/6coarsepitch/</link>
+      <link>https://snnithya.github.io/gamadhani-samples/6coarsepitch/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
       
-      <guid>https://gamadhani.github.io/6coarsepitch/</guid>
+      <guid>https://snnithya.github.io/gamadhani-samples/6coarsepitch/</guid>
       <description>Descending Scale in Kafi Thaat Conditioning Signal  Depiction of conditioning signal in sheet music.
   Audio Samples   .audio-gallery { display: flex; flex-wrap: wrap; justify-content: space-between; } .audio-item { margin: 0 10px; flex: 1; } audio { width: 100%; }  Your browser does not support the audio element.  Conditioning Contour
  Your browser does not support the audio element.  Conditioned Generation
