@@ -109,39 +109,16 @@
     <div class="container pt-4 pb-16">
         <h2 class="subtitle"></h2>
         <div class="content" style="text-align: justify;">
-             <p>Paper: <a href="https://drive.google.com/file/d/1PnsOF1b7UfqYVeuzlq92SlA8oJx83UGF/view?usp=drive_link">[Link]</a></p>
-<p>This is the project page for <strong>GaMaDHaNi: &ldquo;Hierarchical Generative Modeling of Melodic Vocal Contours in Hindustani Classical Music&rdquo;</strong>, accepted in ISMIR 2024.
+             <p>This is the project page for <strong>GaMaDHaNi: &ldquo;Hierarchical Generative Modeling of Melodic Vocal Contours in Hindustani Classical Music&rdquo;</strong>, accepted in ISMIR 2024.
 There are audio and figure examples attached for relevant instances mentioned in the paper. The index on the left hand side will help you navigate the different samples with each item listed as &ldquo;&lt;section number&gt; &lt;relevant section name&gt;&rdquo; from the paper.</p>
 <h2 id="other-relevant-links">Other Relevant Links</h2>
-<p>📝Paper: <a href="https://arxiv.org/abs/2408.12658">https://arxiv.org/abs/2408.12658</a>
-💻Code: <a href="https://github.com/snnithya/GaMaDHaNi">https://github.com/snnithya/GaMaDHaNi</a>
-👩🏽‍💻Demo: <a href="https://huggingface.co/spaces/snnithya/GaMaDHaNi">https://huggingface.co/spaces/snnithya/GaMaDHaNi</a></p>
-<p><strong>Abstract</strong></p>
-<p>Hindustani music is a performance-driven oral tradition
-that exhibits the rendition of rich melodic patterns. In this
-paper, we focus on generative modeling of singers’ vocal
-melodies extracted from audio recordings, as the voice is
-musically prominent within the tradition. Prior generative
-work in Hindustani music models melodies as coarse dis-
-crete symbols which fails to capture the rich expressive
-melodic intricacies of singing. Thus, we propose to use
-a finely quantized pitch contour, as an intermediate rep-
-resentation for hierarchical audio modeling. We propose
-GaMaDHaNi, a modular two-level hierarchy, consisting
-of a generative model on pitch contours, and a pitch con-
-tour to audio synthesis model. We compare our approach
-to non-hierarchical audio models and hierarchical mod-
-els that use a self-supervised intermediate representation,
-through a listening test and qualitative analysis. We also
-evaluate audio model’s ability to faithfully represent the
-pitch contour input using Pearson correlation coefficient.
-By using pitch contours as an intermediate representation,
-we show that our model may be better equipped to listen
-and respond to musicians in a human-AI collaborative set-
-ting by highlighting two potential interaction use cases (1)
-primed generation, and (2) coarse pitch conditioning.</p>
-<p>Note: The sound of a tanpura (drone) is added to the background of the generated samples highlighted below. The use of a tanpura is common in Hindustani vocal performance, and is added here to simulate that sound.
-
+<ul>
+<li>📝Paper: <a href="https://arxiv.org/abs/2408.12658">https://arxiv.org/abs/2408.12658</a> <!-- raw HTML omitted --></li>
+<li>💻Code: <a href="https://github.com/snnithya/GaMaDHaNi">https://github.com/snnithya/GaMaDHaNi</a> <!-- raw HTML omitted --></li>
+<li>👩🏽‍💻Demo: <a href="https://huggingface.co/spaces/snnithya/GaMaDHaNi">https://huggingface.co/spaces/snnithya/GaMaDHaNi</a> <!-- raw HTML omitted --></li>
+</ul>
+<h2 id="example-audio">Example Audio</h2>
+<p>
 <style>
     .audio-gallery {
         display: flex;
@@ -182,7 +159,8 @@ primed generation, and (2) coarse pitch conditioning.</p>
         <p>Pitch (Prime &#43; Pitch Generation)</p>
     </div>
     
-</div></p>
+</div>
+Note: The sound of a tanpura (drone) is added to the background of the generated samples highlighted below. The use of a tanpura is common in Hindustani vocal performance, and is added here to simulate that sound.</p>
 <figure><img   src="/gamadhani-samples/static/homepage/hero_diag.jpg" 
          alt="Fig 2: The overall hierarchical generation structure of GaMaDHaNi comprising of the Pitch Generator, the Spectrogram Generator and a vocoder. During inference, given an optional short melodic input, i.e. ‘prime’, each of the generators produce a pitch continuation and a spectrogram conditioned on the resulting pitch respectively."/><figcaption>
         <p>Fig 2: The overall hierarchical generation structure of GaMaDHaNi comprising of the Pitch Generator, the Spectrogram Generator and a vocoder. During inference, given an optional short melodic input, i.e. ‘prime’, each of the generators produce a pitch continuation and a spectrogram conditioned on the resulting pitch respectively.</p>
